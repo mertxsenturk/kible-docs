@@ -1,0 +1,100 @@
+/* Kıble — belge sayfaları.
+   Uygulamanın "sessiz lüks" dili: sıcak siyah / fildizi zemin,
+   şampanya-bronz vurgu, serif başlıklar, 1px saç çizgileri. */
+
+:root {
+  --bg: #f5f0e6;
+  --text: #1d1810;
+  --dim: rgba(29, 24, 16, 0.74);
+  --faint: rgba(29, 24, 16, 0.52);
+  --gold: #8a6524;
+  --hairline: rgba(29, 24, 16, 0.16);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0a08;
+    --text: #f2ecdf;
+    --dim: rgba(242, 236, 223, 0.62);
+    --faint: rgba(242, 236, 223, 0.38);
+    --gold: #c8a35d;
+    --hairline: rgba(242, 236, 223, 0.10);
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 64px 24px 96px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+main { max-width: 660px; margin: 0 auto; }
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 3.2px;
+  font-weight: 600;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin: 0 0 14px;
+}
+
+h1 {
+  font-family: Didot, "Bodoni 72", Georgia, serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.15;
+  margin: 0 0 10px;
+}
+
+h2 {
+  font-family: Didot, "Bodoni 72", Georgia, serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 44px 0 12px;
+  padding-top: 22px;
+  border-top: 1px solid var(--hairline);
+}
+
+h2:first-of-type { border-top: none; padding-top: 0; }
+
+p, li { color: var(--dim); }
+strong { color: var(--text); font-weight: 600; }
+
+.lede { font-size: 17px; color: var(--dim); margin: 0 0 8px; }
+
+.meta {
+  font-size: 12px;
+  letter-spacing: 1.4px;
+  font-weight: 500;
+  color: var(--faint);
+  margin: 0 0 40px;
+}
+
+ul { padding-left: 20px; }
+li { margin: 8px 0; }
+
+a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+
+.note {
+  margin-top: 56px;
+  padding-top: 22px;
+  border-top: 1px solid var(--hairline);
+  font-size: 13px;
+  color: var(--faint);
+}
+
+.langs { margin-bottom: 34px; font-size: 12px; letter-spacing: 1.2px; font-weight: 500; }
+.langs a { margin-right: 14px; }
+
+table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 15px; }
+th, td { text-align: left; padding: 11px 10px 11px 0; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+th { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+td { color: var(--dim); }

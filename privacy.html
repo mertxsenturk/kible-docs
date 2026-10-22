@@ -12,53 +12,62 @@
 
   <p class="eyebrow">Kıble</p>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective: 24 August 2026</p>
+  <p class="meta">Effective: 22 October 2026</p>
 
   <p class="lede">
-    Kıble collects nothing about you. There is no account to create, no server
-    of ours, and your data never leaves your phone.
+    Kıble asks for no account and contains no ads, analytics or tracking. Your
+    prayer records and settings stay on your phone. Data leaves the device only
+    to make a feature work, in the cases listed one by one below.
   </p>
 
-  <h2>What we do not collect</h2>
-  <p>
-    The app <strong>has no backend.</strong> This is not a policy choice but the
-    architecture itself: there is nowhere for your data to be sent.
-  </p>
+  <h2>What we don't collect</h2>
   <ul>
-    <li>No account, username, email address or password is requested.</li>
-    <li>No date of birth, gender, phone number or other identifying details.</li>
-    <li>No analytics, advertising or tracking SDKs.</li>
-    <li>Your advertising identifier (IDFA) is never read; you are shown no ads.</li>
-    <li>Nothing about you is ever sold or shared.</li>
+    <li>No account, username, email address or password.</li>
+    <li>No identity details such as date of birth, gender or phone number.</li>
+    <li>No analytics, advertising or tracking software.</li>
+    <li>Your advertising identifier (IDFA) is never read and you are never shown ads.</li>
+    <li>Your prayer records, location and settings are not sent to us.</li>
+    <li>Your personal data is never sold or transferred to anyone.</li>
   </ul>
 
   <h2>What stays on your phone</h2>
   <p>
-    The following is stored only in your device’s own storage. Deleting the app
-    deletes all of it.
+    The following is stored only on your device. Deleting the app deletes all of it.
   </p>
   <ul>
-    <li>Your settings: language, theme, calculation method, madhab, alert sound.</li>
-    <li>Your selected city and last known location, used to compute times.</li>
-    <li>Your prayer records: completion marks, streak and missed-prayer tracking.</li>
-    <li>Your alarm configuration.</li>
+    <li>Your settings: language, theme, calculation method, school, reminder and sound choices.</li>
+    <li>The cities you choose and your last location (to calculate prayer times and the qibla).</li>
+    <li>Your prayer records: prayed marks, streak and make-up (qada) tracking.</li>
+    <li>Your favourite mosque and the last nearby mosque search results.</li>
+    <li>What your widgets show. This is shared on the phone between the app and its widgets.</li>
   </ul>
   <p>
-    None of this <strong>ever reaches us.</strong> We cannot see it, we do not
-    back it up, and we cannot restore it.
+    We <strong>don't see, back up or restore</strong> these records.
+  </p>
+
+  <h2>Backups</h2>
+  <p>
+    Export in Settings creates a backup file. It contains your prayer and qada
+    records, chosen cities and preferences. Your last GPS location, mosque
+    search results and purchase information are not included. You choose where
+    the file goes (Files, iCloud Drive, a messaging app and so on). That service
+    stores it under its own terms; we never receive a copy.
   </p>
 
   <h2>Your location</h2>
   <p>
-    Prayer times and the qibla direction depend on location. Your location is
-    used on your device and is not sent to us. If you decline the location
-    permission, the app asks you to pick a city manually and keeps working.
+    Prayer times and the qibla direction are calculated on your phone; your
+    location is not sent to us for this. If you don't grant location access you
+    can choose a city by hand and the app keeps working. Your location is sent
+    only to the search services listed in the table below, to run that search.
   </p>
 
-  <h2>The three cases where data leaves your device</h2>
+  <h2>When data leaves your device</h2>
   <p>
-    For full transparency: in the three cases below, data does leave your phone.
-    Each serves a specific function, and none of them carries your identity.
+    To be transparent: data leaves your device in the cases below. Each one
+    serves a feature, and none includes your name, email or any account
+    details. Like any internet service, these services can see the IP address
+    of the connection.
   </p>
 
   <table>
@@ -68,53 +77,97 @@
       <th>What is sent</th>
     </tr>
     <tr>
-      <td>You open the “Nearby” tab</td>
-      <td>OpenStreetMap Overpass service (overpass-api.de)</td>
-      <td>Your location and a search radius, to find nearby mosques. No
-          identifying information is included.</td>
+      <td>When you open the “Nearby” tab. With Kıble Plus, also while the app is
+          open, when the saved results for the “Nearby Mosques” widget are out of date.</td>
+      <td>Apple Maps search</td>
+      <td>A search term (such as “mosque”) and the area around your location.
+          Subject to Apple's own privacy policy.</td>
     </tr>
     <tr>
-      <td>You search for a city, or your current place name is shown</td>
-      <td>Apple’s geocoding service</td>
-      <td>The city name you typed, or a coordinate. Governed by Apple’s own
+      <td>In the same cases, to complete Apple's results</td>
+      <td>OpenStreetMap Overpass servers (overpass-api.de,
+          overpass.private.coffee)</td>
+      <td>Your location and the search radius (at most 5 km).</td>
+    </tr>
+    <tr>
+      <td>When you search for a city or the name of your current place is shown</td>
+      <td>Apple's geocoding service</td>
+      <td>The city name you search for, or coordinates. Subject to Apple's own
           privacy policy.</td>
     </tr>
     <tr>
-      <td>You subscribe</td>
-      <td>Apple / the App Store</td>
-      <td>Payment is handled entirely by Apple. We never see your card details;
-          we only learn whether a subscription is active.</td>
+      <td>When you tap a mosque or directions</td>
+      <td>Google Maps (app or website)</td>
+      <td>The destination's coordinates or the search. Once opened in Google
+          Maps, Google's privacy policy applies.</td>
+    </tr>
+    <tr>
+      <td>When you turn on the Dynamic Island / Lock Screen card and agree</td>
+      <td>Kıble's end service (Google Firebase, Europe region) and Apple's
+          notification service</td>
+      <td>The card's push token, the time the card should end and the
+          “Prayer time has begun” text shown on it. Details below.</td>
+    </tr>
+    <tr>
+      <td>When you buy Kıble Plus</td>
+      <td>Apple / App Store</td>
+      <td>Payment is handled entirely by Apple. We never see your card details.
+          The app learns from Apple, on your phone, whether your subscription
+          is active.</td>
     </tr>
   </table>
 
+  <h2>The Dynamic Island card and the end service</h2>
   <p>
-    If you never open the “Nearby” tab, no request is ever made to the Overpass
-    service.
+    So that the prayer card can close by itself after the prayer time begins,
+    we use a small server service. It is the only server-side part of the app
+    and is used only if you turn the card on and agree.
   </p>
+  <ul>
+    <li><strong>What is sent:</strong> the card's push token (a code Apple
+        creates only for that card; it contains neither your name nor a device
+        identifier), the time the card should end and the “Prayer time has
+        begun” text shown on it (in the app's language). Location, city and
+        prayer records are not sent.</li>
+    <li><strong>How long it is kept:</strong> this information waits in a
+        Google Cloud queue until the end task runs. A card can be set up at most
+        72 hours ahead; if the end message can't be delivered it is retried for
+        15 more minutes. When the task finishes it is removed from the queue.
+        The service does not store this information anywhere else.</li>
+    <li><strong>Server logs:</strong> Google Cloud access logs may contain IP
+        addresses and connection details. These logs follow Google's standard
+        retention periods.</li>
+    <li><strong>Turning it off:</strong> switch off Dynamic Island in Settings;
+        nothing new is sent.</li>
+  </ul>
 
-  <h2>Notifications</h2>
+  <h2>Notifications and alarms</h2>
   <p>
-    Prayer alerts are scheduled locally on your phone against its own clock. We
-    send no push notifications, and we have no server capable of doing so.
+    Prayer notifications and alarms are scheduled on your phone, using its own
+    clock; no server is involved. The only message that comes from a server is
+    the end message that closes the card above. It is not shown as a
+    notification.
   </p>
 
   <h2>Children</h2>
   <p>
-    The app is suitable for all ages and collects no personal data from anyone,
-    children included.
+    The app is suitable for all ages and does not knowingly collect personal
+    data from anyone, children included.
   </p>
 
   <h2>Your rights</h2>
   <p>
-    GDPR and Turkish KVKK rights apply where an organisation holds personal data
-    about you. We hold none, so there is no record to access, correct or erase.
-    To remove your data, delete the app.
+    Under the GDPR and Turkey's KVKK you have the right to access your data and
+    to ask for it to be corrected or deleted. We keep no record that can be
+    linked to you: the data on your phone is deleted with the app, and the token
+    in the end service leaves the queue when the card closes. For questions and
+    requests, write to the address below.
   </p>
 
   <h2>Changes</h2>
   <p>
-    If this document changes, the effective date above is updated. Should an
-    update ever alter what the app collects, we will say so plainly here.
+    If this text changes, the effective date is updated. If an update changes
+    how the app handles data, we will say so clearly here.
   </p>
 
   <h2>Contact</h2>
